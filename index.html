@@ -1,241 +1,61 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دریا اکسسوری | Darya Accessory</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-
-<header>
-    <div class="logo">
-        <span>𓇼</span>
-        <div>
-            <h1>دریا اکسسوری</h1>
-            <small>DARYA ACCESSORY</small>
-        </div>
-    </div>
-
-    <nav>
-        <a href="#home">خانه</a>
-        <a href="#products">محصولات</a>
-        <a href="#about">درباره ما</a>
-        <a href="#contact">ارتباط</a>
-    </nav>
-</header>
-
-<main>
-
-<section id="home" class="hero">
-
-    <div class="bubble bubble1"></div>
-    <div class="bubble bubble2"></div>
-    <div class="bubble bubble3"></div>
-
-    <div class="hero-content">
-
-        <span class="eyebrow">
-            ✦ JEWELRY & ACCESSORIES ✦
-        </span>
-
-        <h2>
-            یه تکه از دریا،<br>
-            <strong>برای تو 🤍</strong>
-        </h2>
-
-        <p>
-            اکسسوری‌های ظریف و خاص<br>
-            برای آدم‌هایی که جزئیات رو دوست دارن.
-        </p>
-
-        <a href="#products" class="hero-btn">
-            مشاهده کالکشن
-            <span>←</span>
-        </a>
-
-    </div>
-
-    <div class="shell">🐚</div>
-
-</section>
-
-
-<section id="products" class="products">
-
-    <div class="section-title">
-        <span>OUR COLLECTION</span>
-
-        <h2>محصولات دریا</h2>
-
-        <p>
-            انتخابی ظریف برای استایل تو 🫧
-        </p>
-    </div>
-
-
-    <div class="product-grid">
-
-
-        <!-- گوشواره توت فرنگی -->
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <img
-                    src="file_00000000797481f4a15a71e0541c59f1.png"
-                    alt="گوشواره توت فرنگی"
-                >
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-tag">
-                    NEW
-                </span>
-
-                <h3>
-                    گوشواره توت فرنگی 🍓
-                </h3>
-
-                <p>
-                    گوشواره‌ای ظریف و دوست‌داشتنی
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        ۱۸۰,۰۰۰ تومان
-                    </strong>
-
-                    <button>
-                        مشاهده ♡
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- محصول دوم -->
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <div class="placeholder">
-                    🫧
-                </div>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-tag">
-                    SOON
-                </span>
-
-                <h3>
-                    اکسسوری جدید
-                </h3>
-
-                <p>
-                    به‌زودی در کالکشن دریا
-                </p>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        به‌زودی
-                    </strong>
-
-                    <button>
-                        مشاهده ♡
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<section id="about" class="about">
-
-    <div class="about-box">
-
-        <span>
-            𓆝 𓆟 𓆞
-        </span>
-
-        <h2>
-            درباره دریا
-        </h2>
-
-        <p>
-            دریا اکسسوری جاییه برای پیدا کردن
-            اکسسوری‌هایی که کوچیکن، اما می‌تونن
-            حال و هوای استایلت رو عوض کنن.
-            انتخاب‌هایی ظریف، خاص و دوست‌داشتنی برای تو 🤍
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="contact" class="contact">
-
-    <span class="eyebrow">
-        LET'S CONNECT
-    </span>
-
-    <h2>
-        با ما در ارتباط باش 🐚
-    </h2>
-
-    <p>
-        برای سفارش و اطلاع از محصولات جدید،
-        با ما همراه باش.
-    </p>
-
-    <a href="#" class="contact-btn">
-        Instagram ↗
-    </a>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <div>𓇼</div>
-
-    <strong>
-        دریا اکسسوری
-    </strong>
-
-    <p>
-        زیبایی در جزئیات ✨
-    </p>
-
-    <small>
-        © 2026 Darya Accessory
-    </small>
-
-</footer>
-
-</body>
-</html>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f4fbfd;
+            color: #173b4d;
+            line-height: 1.8;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(12px);
+            padding: 14px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0,80,110,0.08);
+        }
+
+        .logo {
+            color: #168ca8;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #315667;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 390px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255,255,255,.7) 0 7px, transparent 8px),
+                radial-gradient(circle at 80%
