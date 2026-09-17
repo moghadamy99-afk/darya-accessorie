@@ -1,86 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Darya Accessories | دریا اکسسوری</title>
-  <meta name="description" content="فروشگاه آنلاین دریا اکسسوری؛ اکسسوری‌های ظریف و خاص با وایب دریایی.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darya Accessory</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="nav">
-  <a class="logo" href="#"><span>𝒟</span><b>Darya</b><small>ACCESSORIES</small></a>
+
+  <header>
+    <h1>دریا اکسسوری</h1>
+    <p>زیبایی در جزئیات ✨</p>
+  </header>
+
   <nav>
-    <a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">ارتباط</a>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#about">درباره ما</a>
+    <a href="#contact">ارتباط با ما</a>
   </nav>
-  <button class="bag" onclick="openCart()">🛍️ <i id="count">0</i></button>
-</header>
 
-<main>
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">DARYA ACCESSORIES · 2026</p>
-    <h1>جزئیات کوچیک،<br><em>حالِ خوبِ بزرگ.</em></h1>
-    <p>اکسسوری‌هایی برای وقتی که می‌خوای استایلت یه حس خاص و دوست‌داشتنی داشته باشه.</p>
-    <a class="btn" href="#products">دیدن محصولات ↓</a>
-  </div>
-  <div class="hero-art">
-    <div class="water"></div>
-    <div class="shell">𓇼</div><div class="pearl p1"></div><div class="pearl p2"></div>
-    <div class="card">Darya<br><small>ACCESSORIES</small></div>
-  </div>
-</section>
+  <main id="home">
 
-<section class="intro" id="about">
-  <span>♡</span><p>ساده، ظریف و با عشق انتخاب شده برای تو.</p>
-</section>
+    <section class="hero">
+      <h2>اکسسوری‌های خاص برای تو 🤍</h2>
+      <p>یه انتخاب ظریف، یه حس متفاوت.</p>
+      <a href="#products" class="button">مشاهده محصولات</a>
+    </section>
 
-<section id="products" class="products">
-  <div class="section-head"><div><p class="eyebrow">SHOP</p><h2>محصولات محبوب</h2></div>
-    <div class="filters"><button class="active" onclick="filterProducts('all',this)">همه</button><button onclick="filterProducts('necklace',this)">گردنبند</button><button onclick="filterProducts('earring',this)">گوشواره</button><button onclick="filterProducts('ring',this)">انگشتر</button></div>
-  </div>
-  <div class="grid" id="grid">
-    <article class="product" data-cat="earring">
-      <div class="pic strawberry">🍓</div><span class="tag">جدید</span>
-      <h3>گوشواره توت‌فرنگی</h3><p>ظریف و فانتزی</p><strong>قیمت: به‌زودی</strong><button onclick="addToCart('گوشواره توت‌فرنگی')">افزودن به سبد</button>
-    </article>
-    <article class="product" data-cat="ring">
-      <div class="pic clover">✤</div>
-      <h3>انگشتر چهارپر</h3><p>مشکی و طلایی</p><strong>قیمت: به‌زودی</strong><button onclick="addToCart('انگشتر چهارپر')">افزودن به سبد</button>
-    </article>
-    <article class="product" data-cat="necklace">
-      <div class="pic butterfly">✧</div>
-      <h3>گردنبند پروانه‌ای</h3><p>درخشان و ظریف</p><strong>قیمت: به‌زودی</strong><button onclick="addToCart('گردنبند پروانه‌ای')">افزودن به سبد</button>
-    </article>
-    <article class="product" data-cat="necklace">
-      <div class="pic kitty">♡</div>
-      <h3>گردنبند پیشی جواهری</h3><p>خاص و دوست‌داشتنی</p><strong>۲۸۰٬۰۰۰ تومان</strong><button onclick="addToCart('گردنبند پیشی جواهری')">افزودن به سبد</button>
-    </article>
-  </div>
-</section>
+    <section id="products">
+      <h2>محصولات جدید</h2>
 
-<section class="story">
-  <div><p class="eyebrow">A LITTLE NOTE</p><h2>هر تکه، یه حس.</h2><p>دریا اکسسوری برای انتخاب‌های کوچیکی ساخته شده که می‌تونن استایل روزمره‌ت رو قشنگ‌تر کنن.</p></div>
-  <div class="bubble">sea<br>♡<br>sun</div>
-</section>
+      <div class="products">
 
-<section id="contact" class="contact">
-  <p class="eyebrow">LET'S TALK</p><h2>سفارش یا سوال داری؟</h2>
-  <p>برای ثبت سفارش و دیدن موجودی، از طریق اینستاگرام با ما در ارتباط باش.</p>
-  <a class="btn" href="https://instagram.com/darya_accessories_" target="_blank" rel="noopener">Instagram ↗</a>
-</section>
-</main>
+        <div class="product">
+          <div class="product-image">تصویر محصول</div>
+          <h3>گردنبند پیشی جواهری</h3>
+          <p>۲۸۰,۰۰۰ تومان</p>
+          <button>مشاهده محصول</button>
+        </div>
 
-<footer><span>© Darya Accessories</span><span>made with ♡</span></footer>
+        <div class="product">
+          <div class="product-image">تصویر محصول</div>
+          <h3>اکسسوری جدید</h3>
+          <p>به‌زودی</p>
+          <button>مشاهده محصول</button>
+        </div>
 
-<div class="modal" id="cart"><div class="cartbox"><button class="close" onclick="closeCart()">×</button><h2>سبد خرید</h2><div id="items">سبد خریدت خالیه ♡</div></div></div>
-<script>
-let cart=[];
-function addToCart(name){cart.push(name);document.querySelector('#count').textContent=cart.length;renderCart()}
-function renderCart(){document.querySelector('#items').innerHTML=cart.length?cart.map((x,i)=>`<div class="cartitem">${x}<button onclick="cart.splice(${i},1);renderCart();document.querySelector('#count').textContent=cart.length">حذف</button></div>`).join(''):'سبد خریدت خالیه ♡'}
-function openCart(){document.querySelector('#cart').classList.add('show');renderCart()}
-function closeCart(){document.querySelector('#cart').classList.remove('show')}
-function filterProducts(cat,btn){document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.product').forEach(x=>x.style.display=(cat==='all'||x.dataset.cat===cat)?'':'none')}
-</script>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>درباره دریا اکسسوری</h2>
+      <p>
+        اکسسوری‌های ظریف و خاص برای کامل کردن استایل تو.
+        انتخابت رو با عشق انجام بده 🤍
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>ارتباط با ما</h2>
+      <p>برای سفارش و اطلاعات بیشتر با ما در ارتباط باش.</p>
+      <a href="#" class="button">اینستاگرام</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Darya Accessory</p>
+  </footer>
+
 </body>
 </html>
